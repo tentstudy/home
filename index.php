@@ -36,7 +36,7 @@
         <meta property="og:image" content="https://tentstudy.xyz/images/banner_share_fb.png" />
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:locale" content="vi_VN">
-        <title>TentStudy - Spread Passion</title>
+        <title>TentStudy - <?php s('spread_passion') ?></title>
         <link rel="shortcut icon" href="images/icons/favicon.png" />
         <!-- Bootstrap & Styles -->
         <link href="css/bootstrap.css" rel="stylesheet" />
@@ -108,7 +108,7 @@
             <!-- Slider 1 -->
             <div class="item">
                 <div class="slidecaption">
-                    <h2>Programmer <b>Training</b></h2>
+                    <h2><?php s('programmer_training') ?></h2>
                     <h4>C, C++, C#, Java, PHP, NodeJS,...</h4>
                     <p><a class="btn waves-effect waves-light btn-lg btn-success" href="shared.html"><i class="icon-paper-plane"></i> <?php s('more_details') ?></a></p>
                 </div>
@@ -118,8 +118,8 @@
             <!-- Slider 2 -->
             <div class="item">
                 <div class="slidecaption wow fadeIn">
-                    <h2>Professional <b>Website Design</b></h2>
-                    <h4>Affordable, Beautiful, Awesome</h4>
+                    <h2><?php s('professional_website_design') ?></h2>
+                    <h4><?php s('professional_website_design_des') ?></h4>
                     <p><a class="btn waves-effect waves-light btn-lg btn-success" href="shared.html"><i class="icon-paper-plane"></i> <?php s('more_details') ?></a></p>
                 </div>
                 <span class="img-overly"></span>
@@ -128,8 +128,8 @@
             <!-- Slider 3 -->
             <div class="item">
                 <div class="slidecaption">
-                    <h2><b>Mobile App</b> Development</h2>
-                    <h4>Android, iOS applications</h4>
+                    <h2><?php s('mobile_app_development') ?></h2>
+                    <h4><?php s('mobile_app_development_des') ?></h4>
                     <p><a class="btn waves-effect waves-light btn-lg btn-success" href="#"><i class="icon-paper-plane"></i> <?php s('more_details') ?></a></p>
                 </div>
                 <span class="img-overly"></span>
@@ -143,7 +143,7 @@
                 <div id="mainslider-nav" class="owl-carousel btn-group">
                     <div class="item"><i class="fa fa-graduation-cap fa-2x"></i><?php s('training'); ?></div>
                     <div class="item"><i class="fa fa-globe fa-2x"></i><?php s('web_design') ?></div>
-                    <div class="item"><i class="fa fa-mobile fa-2x"></i>Mobile Applications</div>
+                    <div class="item"><i class="fa fa-mobile fa-2x"></i><?php s('mobile_applications') ?></div>
                 </div>
             </div>
         </div>
@@ -154,9 +154,9 @@
 <section class="statistics section_space">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="title">FOUNDATION & DEVELOPMENT</h2>
+            <h2 class="title"><?php s('foundation_&_development') ?></h2>
             <br />
-            <h3 class="text-center">Knowledge Sharing, Community Development</h3>
+            <h3 class="text-center"><?php s('foundation_&_development_des') ?></h3>
         </div>
     </div>
 </section>
@@ -167,7 +167,7 @@
         <div id="ourteam">
             <div class="container section_space">
                 <div class="col-md-8 col-md-offset-2">
-                    <h3 class="title">Our <b>Leadership</b> Team</h3>
+                    <h3 class="title"><?php s('our_leadership_team') ?></h3>
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>-->
                 </div>
@@ -177,7 +177,7 @@
                     <div class="col-sm-3 margin-top-40">
                         <a href="#" class="member-profile">
                             <img src="images/team/dung.jpg" alt="">
-                            <span>The Lead</span>
+                            <span><?php s('the_lead') ?></span>
                             <h4>Dung <span>Nguyen Dang</span></h4>
                         </a><br>
                         <ul>
@@ -191,7 +191,7 @@
                     <div class="col-sm-3 margin-top-40">
                         <a href="#" class="member-profile">
                             <img src="images/team/socola.jpg" alt="">
-                            <span>Web Developer</span>
+                            <span><?php s('web_developer') ?></span>
                             <h4>Tien <span>Nguyen The</span></h4>
                         </a><br>
                         <ul>
@@ -202,7 +202,7 @@
                     <div class="col-sm-3 margin-top-40">
                         <a href="#" class="member-profile">
                             <img src="images/team/thanh.jpg" alt="">
-                            <span>Designer</span>
+                            <span><?php s('designer') ?></span>
                             <h4>Thanh <span>Nguyen Duc</span> </h4>
                         </a>
                         <ul>
@@ -214,7 +214,7 @@
                     <div class="col-sm-3 margin-top-40">
                         <a href="#" class="member-profile">
                             <img src="images/team/quan.jpg" alt="">
-                            <span>SEO Manager</span>
+                            <span><?php s('seo_manager') ?></span>
                             <h4>Quan <span>Luong Dinh</span></h4>
                         </a><br>
                         <ul>
@@ -238,7 +238,7 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="text-center">
-            <h2 class="title">TentStudy Blog Posts</h2>
+            <h2 class="title"><?php s('tentStudy_blog_posts') ?></h2>
             <!--<h3>Coming soon</h3>-->
         </div>
         <!--<div class="col-sm-4 margin-top-40">
@@ -281,7 +281,7 @@
             </div>
         </div>-->
         <div class="text-center ">
-            <a href="https://blog.tentstudy.xyz" class="btn waves-effect waves-light btn-success btn-lg margin-top-40 ">Visit Our Blog</a>
+            <a href="https://blog.tentstudy.xyz" class="btn waves-effect waves-light btn-success btn-lg margin-top-40 "><?php s('visit_our_blog') ?></a>
         </div>
     </div>
 </div>
@@ -293,12 +293,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h2>Need help? Contact our team </h2>
-                <p class="font-bold"><b>Facebook, Email</b> any time or <b>call</b> <span class="deskop-help">+841689798731</span>
+                <h2><?php s('need_help_contact_our_team') ?></h2>
+                <p class="font-bold"><?php s('need_help_contact_our_team_des') ?> <span class="deskop-help">+841689798731</span>
                 <span class="mobile-help"><a href="tel:+841689798731">+841689798731</a></span>
             </p>
         </div>
-        <div class="col-md-3"> <a href="https://facebook.com/TentStudy" class="btn waves-effect waves-light btn-secondary btn-lg">Contact TentStudy</a> </div>
+        <div class="col-md-3"> <a href="https://facebook.com/TentStudy" class="btn waves-effect waves-light btn-secondary btn-lg"><?php s('contact_tentStudy') ?></a> </div>
     </div>
 </div>
 </div>
@@ -320,7 +320,7 @@
             <li><a href="https://youtube.com/TentStudy" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
             <li><a href="https://linkedin.com/TentStudy" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
         </ul>
-        <h6 class="follow">Follow Us</h6>
+        <h6 class="follow"><?php s('follow_us') ?></h6>
     </div>
 </div>
 </div>
@@ -329,7 +329,7 @@
 <div class="container">
     <div class="row">
         <div class="span12">
-            <p class="copyright"><a href="#">TentStudy</a> - Theme by TrewSoft.</p>
+            <p class="copyright"><a href="#">TentStudy</a> - <?php s('theme_by_trewSoft') ?>.</p>
         </div>
     </div>
 </div>
