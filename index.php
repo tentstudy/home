@@ -5,8 +5,12 @@
         echo $s[$key];
     }
     $langs = array(
-        'vn' => 'Việt Nam',
+        'vi' => 'Việt Nam',
         'en' => 'English'
+    );
+    $langToHtmlLang = array(
+        'vi' => 'vi-VN',
+        'en' => 'en-US'
     );
     $ok = false;
     $lang;
@@ -18,12 +22,12 @@
         }
     }
     if(!$ok){
-        require_once __DIR__ . '/data/lang/vn.php';
-        $lang = 'vn';
+        require_once __DIR__ . '/data/lang/vi.php';
+        $lang = 'vi';
     }
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo $lang; ?>">
+<html lang="<?php echo $langToHtmlLang[$lang]; ?>">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,20 +41,20 @@
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:locale" content="vi_VN">
         <title>TentStudy - <?php s('spread_passion') ?></title>
-        <link rel="shortcut icon" href="images/icons/favicon.png" />
+        <link rel="shortcut icon" href="/images/icons/favicon.png" />
         <!-- Bootstrap & Styles -->
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="css/bootstrap-theme.css" rel="stylesheet" />
-        <link href="css/block_grid_bootstrap.css" rel="stylesheet" />
-        <link href="css/owl.carousel.css" rel="stylesheet" />
-        <link href="css/owl.theme.css" rel="stylesheet" />
-        <link href="css/animate.min.css" rel="stylesheet" />
-        <!--<link href="css/jquery.circliful.css" rel="stylesheet" />-->
-        <link href="css/select2.css" rel="stylesheet" />
-        <link href="css/tablesaw.stackonly.css" rel="stylesheet" />
-        <link href="css/slicknav.css" rel="stylesheet" />
-        <link href="css/icons.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="/css/block_grid_bootstrap.css" rel="stylesheet" />
+        <link href="/css/owl.carousel.css" rel="stylesheet" />
+        <link href="/css/owl.theme.css" rel="stylesheet" />
+        <link href="/css/animate.min.css" rel="stylesheet" />
+        <!--<link href="/css/jquery.circliful.css" rel="stylesheet" />-->
+        <link href="/css/select2.css" rel="stylesheet" />
+        <link href="/css/tablesaw.stackonly.css" rel="stylesheet" />
+        <link href="/css/slicknav.css" rel="stylesheet" />
+        <link href="/css/icons.css" rel="stylesheet" />
+        <link href="/style.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Global Fullpage Loader-->
@@ -340,19 +344,19 @@
 <!--  Go to Top-->
 <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 <!--  End of Go to Top -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--<script src="js/hoverIntent.js"></script>-->
-<script src="js/superfish.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/wow.min.js"></script>
-<!--<script src="js/jquery.circliful.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.responsiveTabs.js"></script>-->
-<script src="js/jquery.slicknav.min.js"></script>
-<!--<script src="js/retina.min.js"></script>
-<script src="js/counterup.min.js"></script>
-<script src="js/waves.js"></script>-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!--<script src="/js/hoverIntent.js"></script>-->
+<script src="/js/superfish.min.js"></script>
+<script src="/js/owl.carousel.js"></script>
+<script src="/js/wow.min.js"></script>
+<!--<script src="/js/jquery.circliful.min.js"></script>
+<script src="/js/waypoints.min.js"></script>
+<script src="/js/jquery.responsiveTabs.js"></script>-->
+<script src="/js/jquery.slicknav.min.js"></script>
+<!--<script src="/js/retina.min.js"></script>
+<script src="/js/counterup.min.js"></script>
+<script src="/js/waves.js"></script>-->
 <script>
 !function(o){"use strict";o(document).on("ready",function(n){o("#navigation").superfish({delay:300,animation:{opacity:"show",height:"show"},speed:"fast",dropShadows:!1}),o(function(){o("#navigation").slicknav({closedSymbol:"&#8594;",openedSymbol:"&#8595;"})})}),new WOW({boxClass:"wow",animateClass:"animated",offset:100,mobile:!1}).init(),o(window).on("load",function(n){o("#global-loader").fadeOut("slow")}),o(window).on("scroll",function(n){o(this).scrollTop()>300?o("#back-to-top").fadeIn("slow"):o("#back-to-top").fadeOut("slow")}),o("#back-to-top").on("click",function(n){return o("html, body").animate({scrollTop:0},600),!1})}(jQuery);
 </script>

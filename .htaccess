@@ -1,0 +1,10 @@
+RewriteEngine ON
+
+RewriteRule ^js/(.*)$ /vi/js/$1
+
+#Rewrite for language
+RewriteRule ^([a-z]{2})/(.*)$  $2?$1&%{query_STRING} [END]
+
+#Another rewriteRule
+RewriteRule ^post/([0-9])(.*)?(.*)$  /test.php?id=$1&%{query_STRING}
+RewriteRule ^bai-viet/([0-9])(.*)?(.*)$  /test.php?id=$1&%{query_STRING}

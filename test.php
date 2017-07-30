@@ -1,6 +1,8 @@
 <?php
+    // echo $_SERVER['REQUEST_URI'];
+    print_r($_GET);
     $langs = array(
-        'vn' => 'Việt Nam',
+        'vi' => 'Việt Nam',
         'en' => 'English'
     );
     $ok = false;
@@ -12,6 +14,7 @@
     	}
     }
     if(!$ok){
-    	require_once __DIR__ . '/data/lang/vn.php';
+    	require_once __DIR__ . '/data/lang/vi.php';
+        echo 123;
     }
 ?>
