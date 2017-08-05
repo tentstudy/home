@@ -85,6 +85,8 @@
                 </div>
             </div>
         </section>
+
+
         <!-- End of Header-->
         <!-- Breadcrumps -->
         <!--<section class="breadcrumbs">
@@ -112,14 +114,14 @@
       <section>
          <div class="row section_space">
             <div class="col-sm-8 center-block">
-               <h2 class="title">Contact Us</h2>
+               <h2 class="title"><?php s('contact_us') ?></h2>
                <div id="sendstatus"></div>
                <div id="contactform">
                   <form method="post" action="sendmail.php">
-                     <p><label for="name">Your Name:*</label> <input type="text" class="form-control" name="name" id="name" tabindex="1" /></p>
-                     <p><label for="email">Contact Email:*</label> <input type="text" class="form-control" name="email" id="email" tabindex="2" /></p>
-                     <p><label for="comments">Your Message to us:*</label> <textarea  class="form-control" name="comments" id="comments" cols="12" rows="6" tabindex="3"></textarea></p>
-                     <p><input name="submit" type="submit" id="submit" class="btn waves-effect waves-light btn-success"  value="Submit" tabindex="4" /></p>
+                     <p><label for="name"><?php s('your_name') ?></label> <input type="text" class="form-control" name="name" id="name" tabindex="1" /></p>
+                     <p><label for="email"><?php s('contact_email') ?></label> <input type="text" class="form-control" name="email" id="email" tabindex="2" /></p>
+                     <p><label for="comments"><?php s('your_message_to_us') ?></label> <textarea  class="form-control" name="comments" id="comments" cols="12" rows="6" tabindex="3"></textarea></p>
+                     <p><button name="submit" type="submit" id="submit" class="btn waves-effect waves-light btn-success" tabindex="4" ><?php s('submit') ?></button> </p>
                   </form>
                </div>
             </div>
@@ -131,7 +133,7 @@
       <div class="row coloumgrid">
          <div class="col-sm-12 text-center multipannels section_space">
             <div>
-                <h3 class="title">Contact Us</h3>
+                <h3 class="title"><?php s('contact_us') ?></h3>
             </div>
 
             <div class="col-sm-6 margin-top-40">
@@ -140,7 +142,7 @@
                         <i class="fa fa-circle-thin fa-stack-2x text-dark"></i>
                         <i class="fa icon-earphones fa-stack-1x fa-inverse text-green"></i>
                       </div>
-                      <h3>24X7 Call Center</h3>
+                      <h3>24X7 <?php s('call_center') ?></h3>
                       <p>+841689798731</p>
                    </div>
             </div>
@@ -151,7 +153,7 @@
                         <i class="fa fa-circle-thin fa-stack-2x text-dark"></i>
                         <i class="fa icon-envelope fa-stack-1x fa-inverse text-green"></i>
                       </div>
-                      <h3>Email Us</h3>
+                      <h3><?php s('email_us') ?></h3>
                       <p><a href="#">tentstudyxyz@gmail.com</a></p>
                    </div>
             </div>
@@ -168,10 +170,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                    <h2>Need help? Call our award-winning support team </h2>
-                    <p class="font-bold">24/7 US based call support, <b>Email</b> any time or call <span class="deskop-help">+841689798731</span> <span class="mobile-help"><a href="tel:+841689798731">+841689798731</a></span></p>
+                    <h2><?php s('need_help') ?></h2>
+                    <p class="font-bold"><?php s('call_support') ?>, <b>Email</b> <?php s('any_time_or') ?><span class="deskop-help">+841689798731</span> <span class="mobile-help"><a href="tel:+841689798731">+841689798731</a></span></p>
                     </div>
-                    <div class="col-md-3"> <a href="#" class="btn waves-effect waves-light btn-secondary btn-lg">Contact TentStudy</a> </div>
+                    <div class="col-md-3"> <a href="#" class="btn waves-effect waves-light btn-secondary btn-lg"><?php s('contact_tentstudy') ?></a> </div>
                 </div>
             </div>
         </div>
@@ -200,7 +202,7 @@
             <li><a href="https://youtube.com/TentStudy" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
             <li><a href="https://linkedin.com/TentStudy" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
         </ul>
-        <h6 class="follow">Follow Us</h6>
+        <h6 class="follow"><?php s('follow_us') ?></h6>
     </div>
 </div>
 </div>

@@ -85,6 +85,57 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- <div id="sub-banner" class="bg_dark">
+         <div class="row info-text wow fadeIn">
+            <div class="col-sm-6 ">
+               <div>
+                    <div class="row section_space">
+                    <div class="col-sm-8 center-block">
+                       <h2 class="title"><?php //s('thank_you') ?></h2>
+                       <div id="sendstatus"><?php //s('submitted_successfully') ?></div>
+                       <div id="contactform">
+                       <?php 
+                             //$name = $_POST['name'];
+                             //$email = $_POST['email'];
+                             //$comments = $_POST['comments'];
+                        ?>
+                           d <br/>
+                           d <br/>
+                           d <br/>
+                          d  <br/>
+                        </div>
+                    </div>
+                    </div>
+               </div>
+            </div>
+            <div class="col-sm-6 text-right">
+               <i class="infoicon icon-call-in"></i>
+            </div>
+         </div>
+         <div class="img-holder">
+            <img src="images/sub-banner_bg.png" alt="image description">
+         </div>
+      </div> -->
+
+       <div id="sub-banner" class="bg_dark">
+         <div class="row info-text wow fadeIn">
+            <div class="col-sm-6 ">
+               <div>
+                  <h2><?php s('thank_you') ?></h2>
+                  <p><?php s('submitted_successfully') ?> </p>
+               </div>
+            </div>
+            <div class="col-sm-6 text-right">
+               <i class="infoicon icon-call-in"></i>
+            </div>
+         </div>
+         <div class="img-holder">
+            <img src="images/sub-banner_bg.png" alt="image description">
+         </div>
+      </div>
+        
         <!-- End of Header-->
         <!-- Breadcrumps -->
         <!--<section class="breadcrumbs">
@@ -109,25 +160,13 @@
   
 
  	<section>
-         <div class="row section_space">
-            <div class="col-sm-8 center-block">
-               <h2 class="title"><?php s('thank_you') ?></h2>
-               <div id="sendstatus"><?php s('submitted_successfully') ?></div>
-               <div id="contactform">
-	           <?php 
-					$name = $_POST['name'];
-					$email = $_POST['email'];
-					$comments = $_POST['comments'];
-				?>
-               </div>
-            </div>
-         </div>
+         
       </section>
     <!-- Contact -->
       <div class="row coloumgrid">
          <div class="col-sm-12 text-center multipannels section_space">
             <div>
-                <h3 class="title">Contact Us</h3>
+                <h3 class="title"><?php s('contact_us') ?></h3>
             </div>
 
             <div class="col-sm-6 margin-top-40">
@@ -136,7 +175,7 @@
                         <i class="fa fa-circle-thin fa-stack-2x text-dark"></i>
                         <i class="fa icon-earphones fa-stack-1x fa-inverse text-green"></i>
                       </div>
-                      <h3>24X7 Call Center</h3>
+                      <h3>24X7 <?php s('call_center') ?></h3>
                       <p>+841689798731</p>
                    </div>
             </div>
@@ -147,7 +186,7 @@
                         <i class="fa fa-circle-thin fa-stack-2x text-dark"></i>
                         <i class="fa icon-envelope fa-stack-1x fa-inverse text-green"></i>
                       </div>
-                      <h3>Email Us</h3>
+                      <h3><?php s('email_us') ?></h3>
                       <p><a href="#">tentstudyxyz@gmail.com</a></p>
                    </div>
             </div>
@@ -164,10 +203,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                    <h2>Need help? Call our award-winning support team </h2>
-                    <p class="font-bold">24/7 US based call support, <b>Email</b> any time or call <span class="deskop-help">+841689798731</span> <span class="mobile-help"><a href="tel:+841689798731">+841689798731</a></span></p>
+                    <h2><?php s('need_help') ?></h2>
+                    <p class="font-bold"><?php s('call_support') ?>, <b>Email</b> <?php s('any_time_or') ?><span class="deskop-help">+841689798731</span> <span class="mobile-help"><a href="tel:+841689798731">+841689798731</a></span></p>
                     </div>
-                    <div class="col-md-3"> <a href="#" class="btn waves-effect waves-light btn-secondary btn-lg">Contact TentStudy</a> </div>
+                    <div class="col-md-3"> <a href="#" class="btn waves-effect waves-light btn-secondary btn-lg"><?php s('contact_tentstudy') ?></a> </div>
                 </div>
             </div>
         </div>
@@ -196,7 +235,7 @@
             <li><a href="https://youtube.com/TentStudy" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
             <li><a href="https://linkedin.com/TentStudy" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
         </ul>
-        <h6 class="follow">Follow Us</h6>
+        <h6 class="follow"><?php s('follow_us') ?></h6>
     </div>
 </div>
 </div>

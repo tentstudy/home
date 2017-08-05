@@ -27,6 +27,22 @@
 		'theme_by_trewSoft' => 'Theme by TrewSoft',
 		'thank_you' => 'Thank You',
 		'submitted_successfully' => 'Submitted successfully. We will reply as soon as possible.',
-		'contact' => 'Contact'
+		'contact' => 'Contact',
+		'your_name' => 'Your Name',
+		'contact_us' => 'Contact Us',
+		'contact_email' => 'Contact Email',
+		'your_message_to_us' => 'Your Message to us',
+		'submit' => 'Submit',
+		'call_center' => 'Call Center',
+		'email_us' => 'Email Us',
+		'need_help' => 'Need help? Call our award-winning support team',
+		'call_support' => 'Call support',
+		'any_time_or' => 'any time or call',
+		'contact_tentstudy' => 'Contact TentStudy'
+
+
+
+
+
 	);
 ?>

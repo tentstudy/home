@@ -27,6 +27,18 @@
 		'theme_by_trewSoft' => 'Theme by TrewSoft',
 		'thank_you' => 'Cảm ơn bạn',
 		'submitted_successfully' => 'Gửi thành công. Chúng tôi sẽ trả lời sớm nhât có thể.',
-		'contact' => 'Liên Hệ'
+		'contact' => 'Liên Hệ',
+		'contact_email' => 'Địa chỉ email liên lạc',
+		'your_name' => "Tên của bạn",
+		'your_message_to_us' => 'Tin nhắn của bạn cho chúng tôi',
+		'submit' => 'Gủi',
+		'contact_us' => 'Liên hệ chúng tôi',
+		'call_center' => 'Trung tâm cuộc gọi',
+		'email_us' => 'Email của tôi',
+		'need_help' => 'Cần giúp đỡ? Gọi cho nhóm hỗ trợ của chúng tôi',
+		'call_support' => 'Gọi hỗ trợ',
+		'any_time_or' => 'Bất kỳ lúc nào hoặc gọi',
+		'contact_tentstudy' => 'Liên hệ với TentStudy'
+
 	);
 ?>
