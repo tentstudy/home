@@ -25,5 +25,8 @@
 		'contact_tentStudy' => 'Liên hệ TentStudy',
 		'follow_us' => 'Theo dõi',
 		'theme_by_trewSoft' => 'Theme by TrewSoft',
+		'thank_you' => 'Cảm ơn bạn',
+		'submitted_successfully' => 'Gửi thành công. Chúng tôi sẽ trả lời sớm nhât có thể.',
+		'contact' => 'Liên Hệ'
 	);
 ?>

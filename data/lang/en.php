@@ -25,5 +25,8 @@
 		'contact_tentStudy' => 'Contact TentStudy',
 		'follow_us' => 'Follow Us',
 		'theme_by_trewSoft' => 'Theme by TrewSoft',
+		'thank_you' => 'Thank You',
+		'submitted_successfully' => 'Submitted successfully. We will reply as soon as possible.',
+		'contact' => 'Contact'
 	);
 ?>

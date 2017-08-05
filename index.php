@@ -82,8 +82,8 @@
                 <div class="col-sm-12 col-xs-12 col-md-9">
                     <nav id="desktop-menu">
                         <ul class="sf-menu" id="navigation">
-                            <li class="current"><a href="#"><i class="fa fa-home"></i><?php s('home') ?></a></li>
-                            <!--<li><a href="#"><i class="fa fa-envelope fa-fw"></i>Contact</a></li>-->
+                            <li class="current"><a href="index.php"><i class="fa fa-home"></i><?php s('home') ?></a></li>
+                            <li><a href="contact.php"><i class="fa fa-envelope fa-fw"></i><?php s('contact') ?></a></li>
                         </ul>
                     </nav>
                 </div>
