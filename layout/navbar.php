@@ -12,11 +12,21 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Khóa học</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Web Development</a></li>
+                            <li><a href="/web-class/">Web Development</a></li>
                         </ul>
                     </li>
                     <li><a href="/contact.php"><i class="fa fa-envelope fa-fw"></i><?php s('contact') ?></a></li>
-                    <li><a href="#">Đăng Nhập</a></li>
+                    <?php if (empty($_COOKIE['name']) || empty($_COOKIE['id'])): ?>
+                    <li><a href="/login.php?login_with_facebook">Đăng Nhập</a></li>
+                    <?php else: ?>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $_COOKIE['name'] ?></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/logout.php">Logout</a></li>
+                        </ul>
+                    </li>
+                    <?php endif ?>
+                    
                 </ul>
             </nav>
         </div>
