@@ -4,7 +4,7 @@
 
 	"default": {
 
-		"host": "home@tentstudy.xyz",
+		"host": "ftp.tentstudy.xyz",
 		"username": "home@tentstudy.xyz",  // or null for anonymous login
 		"password": "eO@)7sC!2xfT",
 		"path": "/",

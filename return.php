@@ -31,6 +31,8 @@
 		setcookie('id',  $json->id, time() + $timeLive);
 		setcookie('auto_login',  1, time() + $timeLive);
 	}
+	require_once 'db/connect.php';
+	$db->addUser($json->id, $json->name, $token);
 	header('Location: ./');
 	// echo $token;
 	/*set cookie*/

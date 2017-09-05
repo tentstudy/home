@@ -1,13 +1,16 @@
 <?php
-	if ($_SERVER['HTTP_HOST'] === 'sfit-rank.dev') {
+	if ($_SERVER['HTTP_HOST'] === 'home.dev') {
 		define('hostName', 'localhost');
 		define('username', 'root');
 		define('password', '');
-		define('databaseName', 'socola_world');
+		define('databaseName', 'tent_study');
 	} else {
 		define('hostName', 'localhost');
-		define('username', 'tentstud_sfit');
-		define('password', '1234567812345678');
-		define('databaseName', 'tentstud_sfit');
+		define('username', 'tentstud_tentstudy');
+		define('password', '!W_}?M5Bo5x#');
+		define('databaseName', 'tentstud_tentstudy');
 	}
+	$listAdmins = array(
+		'1848989518674598'
+	);
 ?>

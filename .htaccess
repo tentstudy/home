@@ -9,4 +9,21 @@ RewriteRule ^([a-z]{2})/(.*)$  $2?$1&%{query_STRING} [END]
 RewriteRule ^post/([0-9])(.*)?(.*)$  /test.php?id=$1&%{query_STRING}
 RewriteRule ^bai-viet/([0-9])(.*)?(.*)$  /test.php?id=$1&%{query_STRING}
 
+
+
+RewriteRule ^web-class/exercise-([0-9])$  /web-class/exercise.php?id=$1
+
+RewriteRule ^web-class/exercise$  /web-class/exercise.php
+RewriteRule ^web-class/exercise/$  /web-class/exercise.php
+
+RewriteRule ^web-class/add-exercise$  /web-class/add-exercise.php
+RewriteRule ^web-class/add-exercise/$  /web-class/add-exercise.php
+
+RewriteRule ^web-class/edit-exercise-([0-9])$  /web-class/add-exercise.php?id=$1
+RewriteRule ^web-class/edit-exercise-([0-9])/$  /web-class/add-exercise.php?id=$1
+
+RewriteRule ^web-class/view-exercise-([0-9])$  /web-class/view-exercise.php?id=$1
+RewriteRule ^web-class/view-exercise-([0-9])/$  /web-class/view-exercise.php?id=$1
+
+
 ErrorDocument 404 /pages-404.html

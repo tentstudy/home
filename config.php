@@ -3,7 +3,8 @@
 	define('CLIENT_SECRET','1723fe0ec79cd0cf142c93b9010ff5d8');
 	// define('redirect_uri',$_SERVER['REQUEST_SCHEME'].'://'.'facebook.dev/return.php');
 	// define('redirect_uri','http://sfit-rank.dev/return.php');
-	define('REDIRECT_URI','http://home.dev/return.php');
+	// define('REDIRECT_URI','http://home.dev/return.php');
+	define('REDIRECT_URI','https://tentstudy.xyz/return.php');
 	$permission = array(
 		/*public*/
 		'public_profile'                 => 1,

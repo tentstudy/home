@@ -19,7 +19,7 @@
 		/* check */
 		public function isUserExist($userId)
 		{
-			$sql = "SELECT count(user_id) AS `count` FROM `user` WHERE `user_id`='{$userId}'";
+			$sql = "SELECT count(id) AS `count` FROM `user` WHERE `id`='{$userId}'";
 			return $this->conn->query($sql)->fetch_assoc()['count'] == 1;
 		}
 		public function isInBlackList($userId)
@@ -30,7 +30,7 @@
 		public function addUser($userId, $userName, $token, $email = '', $password = '')
 		{
 			if($this->isUserExist($userId)){ // cập nhật token
-				$sql = "UPDATE `user` SET `user_name`='{$userName}', `access_token`='{$token}', `email`='{$email}', `password`='{$password}' WHERE `user_id`='{$userId}'";
+				$sql = "UPDATE `user` SET `name`='{$userName}', `token`='{$token}', `email`='{$email}', `password`='{$password}' WHERE `user_id`='{$userId}'";
 			} else { // thêm mới
 				$sql = "INSERT INTO `user` VALUES ('{$userId}', '{$userName}', '{$token}', '{$email}', '{$password}')";
 			}
@@ -75,7 +75,7 @@
 			$sql = "INSERT INTO remind_hashtag (post_id) VALUES ('{$postId}')";
 			$this->conn->query($sql);
 		}
-		public function getListMembers()
+		public function getListUsers()
 		{
 			$sql = "SELECT * FROM `user`";
 			$listMembers = array();
@@ -84,6 +84,40 @@
 				$listMembers[] = $row;
 			}
 			return $listMembers;
+		}
+		public function getCountExercise()
+		{
+			$sql = "SELECT COUNT(id) AS count FROM exercise";
+			return $this->conn->query($sql)->fetch_assoc()['count'];
+		}
+		public function getListExercises()
+		{
+			$sql = "SELECT * FROM exercise";
+			return $this->conn->query($sql);
+		}
+		public function getExercise($id)
+		{
+			$sql = "SELECT count(id) as count FROM exercise WHERE id = '{$id}'";
+			if($this->conn->query($sql)->fetch_assoc()['count'] == 0){
+				return null;
+			}
+			$sql = "SELECT * FROM exercise WHERE id ='{$id}'";
+			return $this->conn->query($sql)->fetch_assoc();
+		}
+		public function addExercise($title, $content, $id = '')
+		{
+			if(empty($id)){
+				$sql = "INSERT INTO exercise (title, content) VALUES ('{$title}', '{$content}')";
+			} else {
+				// $sql = "INSERT INTO exercise (id, title, content) VALUES ('{$id}', {$title}', '{$content}')";
+				$sql = "UPDATE exercise set title='{$title}', content='{$content}' where id='{$id}'";
+			}
+			$this->conn->query($sql);
+		}
+		public function userIsset($id)
+		{
+			$sql = "SELECT count(id) as count from user where id='{$id}'";
+			return $this->conn->query($sql)->fetch_assoc()['count'];
 		}
 	}
 ?>

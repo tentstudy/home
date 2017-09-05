@@ -1,31 +1,4 @@
-<?php
-function s($key)
-{
-global $s;
-echo $s[$key];
-}
-$langs = array(
-'vi' => 'Việt Nam',
-'en' => 'English'
-);
-$langToHtmlLang = array(
-'vi' => 'vi-VN',
-'en' => 'en-US'
-);
-$ok = false;
-$lang;
-foreach ($langs as $lang => $value) {
-if (array_key_exists($lang, $_GET)) {
-require_once __DIR__ . "/data/lang/{$lang}.php";
-$ok = true;
-break;
-}
-}
-if(!$ok){
-require_once __DIR__ . '/data/lang/vi.php';
-$lang = 'vi';
-}
-?>
+<?php require 'layout/translate.php';?>
 <!DOCTYPE html>
 <html lang="<?php echo $langToHtmlLang[$lang]; ?>">
     <head>
@@ -61,7 +34,7 @@ $lang = 'vi';
         </section>-->
         <!-- End of Top MiniBar-->
         <!-- Header-->
-        <?php require_once 'layout/navbar.php'; ?>
+        <?php require_once __DIR__ . '/layout/header.php'; ?>
         <!-- End of Header-->
         <!-- Breadcrumps -->
         <!--<section class="breadcrumbs">
@@ -317,19 +290,7 @@ $lang = 'vi';
 <!--  Go to Top-->
 <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 <!--  End of Go to Top -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<!--<script src="/js/hoverIntent.js"></script>-->
-<script src="/js/superfish.min.js"></script>
-<script src="/js/owl.carousel.js"></script>
-<script src="/js/wow.min.js"></script>
-<!--<script src="/js/jquery.circliful.min.js"></script>
-<script src="/js/waypoints.min.js"></script>
-<script src="/js/jquery.responsiveTabs.js"></script>-->
-<script src="/js/jquery.slicknav.min.js"></script>
-<!--<script src="/js/retina.min.js"></script>
-<script src="/js/counterup.min.js"></script>
-<script src="/js/waves.js"></script>-->
+<?php require 'layout/js.php'; ?>
 <script>
 !function(o){"use strict";o(document).on("ready",function(n){o("#navigation").superfish({delay:300,animation:{opacity:"show",height:"show"},speed:"fast",dropShadows:!1}),o(function(){o("#navigation").slicknav({closedSymbol:"&#8594;",openedSymbol:"&#8595;"})})}),new WOW({boxClass:"wow",animateClass:"animated",offset:100,mobile:!1}).init(),o(window).on("load",function(n){o("#global-loader").fadeOut("slow")}),o(window).on("scroll",function(n){o(this).scrollTop()>300?o("#back-to-top").fadeIn("slow"):o("#back-to-top").fadeOut("slow")}),o("#back-to-top").on("click",function(n){return o("html, body").animate({scrollTop:0},600),!1})}(jQuery);
 </script>
